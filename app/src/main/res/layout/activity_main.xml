@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/idea_post"
+        android:layout_width="156dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/round_line"
+        android:text="아이디어 공모"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/event_info"
+        android:layout_width="156dp"
+        android:layout_height="110dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/round_line"
+        android:text="공모전 정보"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:itemBackground="@android:color/white"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/navi" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="84dp"
+        android:layout_height="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/toplogo"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="50dp"
+        app:srcCompat="@drawable/bannertext" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager_Banner"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="16dp"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="30dp"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="-310dp"
+        android:layout_alignLeft="@id/imageView4"
+        android:layout_alignBottom="@id/imageView4"
+        app:srcCompat="@drawable/topratetext" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imageView5"
+        android:layout_alignBottom="@id/imageView5"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="-190dp"
+        app:srcCompat="@drawable/toprateline" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imageView5"
+        android:layout_alignBottom="@id/imageView5"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="-160dp"
+        app:srcCompat="@drawable/toprateevent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_main"
+        android:layout_width="303dp"
+        android:layout_height="130dp"
+        android:layout_alignLeft="@id/imageView7"
+        android:layout_alignBottom="@id/imageView7"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="-106dp" />
+
+</RelativeLayout>
