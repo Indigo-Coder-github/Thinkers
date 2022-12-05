@@ -11,6 +11,6 @@
         android:layout_height="match_parent"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/bannerimgsample1"
-        />
+        android:contentDescription="@string/todo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

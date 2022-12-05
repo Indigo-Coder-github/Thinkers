@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.thkinkers'
+    namespace 'com.example.thinkers'
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.thkinkers"
+        applicationId "com.example.thinkers"
         minSdk 21
         targetSdk 32
         versionCode 1

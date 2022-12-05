@@ -1,5 +1,14 @@
 <resources>
-    <string name="app_name">Thkinkers</string>
+    <string name="app_name">Thinkers</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="textview">TextView</string>
+    <string name="contestIdea">아이디어 공모</string>
+    <string name="contestInformation">공모전 정보</string>
+    <string name="todoImage">TODO</string>
+    <string name="todoImage2">TODO</string>
+    <string name="todoImage4">TODO</string>
+    <string name="todoImage5">TODO</string>
+    <string name="todoImage7">TODO</string>
 </resources>

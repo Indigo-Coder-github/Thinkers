@@ -1,11 +1,10 @@
-package com.example.thkinkers
+package com.example.thinkers
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager2.widget.ViewPager2
 import kotlinx.android.synthetic.main.activity_main.*
-import java.util.ArrayList;
-import androidx.recyclerview.widget.LinearLayoutManager;
+import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.example.thkinkers
+package com.example.thinkers
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.banner_list_item.view.*
 
 class ViewPagerAdapter(idolList:ArrayList<Int>) : RecyclerView.Adapter<ViewPagerAdapter.PagerViewHolder>() {
-    var item = idolList
+    private var item = idolList
 
     override fun onCreateViewHolder(parent : ViewGroup, viewType : Int) = PagerViewHolder((parent))
 

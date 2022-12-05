@@ -1,4 +1,4 @@
-package com.example.thkinkers
+package com.example.thinkers
 
 import org.junit.Test
 
